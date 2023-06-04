@@ -26,13 +26,13 @@
   </head>
   <body>
     <!--Header-->
-    <header class="header">
+    <header class="header header-fixed">
       <div class="header-container container">
         <a class="logo-header link" href="#">Soudemy</a>
 
         <div class="header-social">
           <ul class="header-social-list list">
-            <li class="fooheaderter-social-item">
+            <li class="header-social-item">
               <a
                 class="header-social-link link"
                 href="https://www.instagram.com/"
@@ -141,7 +141,34 @@
     <!--Main -->
     <main class="main">
       <!--Hero-->
-      <section class="hero"></section>
+      <section class="hero">
+        <div class="hero-container container">
+          <h1 class="main-title">Modern Luxury Villa</h1>
+          <p class="hero-price-text">Price: $2,999,99</p>
+          <button class="hero-btn" type="button ">Schedule a visit</button>
+
+          <source
+            media="(min-width:1158px)"
+            srcset="
+              ./images/hero/frame@1x.png 1x,
+              ./images/hero/frame@1x.png 2x
+            "
+            sizes="264"
+            type="image/png"
+          />
+
+          <picture>
+            <img
+              class="img-team"
+              src="./images/hero/frame@1x.png"
+              alt="frame"
+              width="264"
+              height="260"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </section>
 
       <!--Section_1-->
 
