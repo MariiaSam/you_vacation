@@ -89,6 +89,7 @@ img {
 }
 
 .header-container {
+  position: relative;
   display: flex;
   align-items: center;
   text-align: center;
@@ -255,16 +256,19 @@ img {
 
 .hero-btn:hover:after,
 .hero-btn:focus:after {
-  transform: skewX(-45deg) scale(1, 1);
+  transform: skewX(-43deg) scale(1, 1);
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .header-frame {
+  position: absolute;
+  transform: translate(150px, -400px);
   box-sizing: border-box;
   width: 331px;
-  height: 453px;
+  height: 287px;
   width: 331px;
   height: 453px;
-  border: 6px solid #b18e72;
+  border-radius: 15px;
+  z-index: 10;
 }
