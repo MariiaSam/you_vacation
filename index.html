@@ -141,7 +141,17 @@
     <!--Main -->
     <main class="main">
       <!--Hero-->
-      <section class="hero">
+      <section class="hero"> 
+        <!-- <picture>
+            <img
+              class="header-frame"
+              src="./images/hero/frame@1x.png"
+              alt="frame"
+              width="331"
+              height="453"
+              loading="lazy"
+            />
+          </picture>-->
         <div class="hero-container container">
           <h1 class="main-title">Modern Luxury Villa</h1>
           <p class="hero-price-text">Price: $2,999,99</p>
@@ -157,16 +167,7 @@
             type="image/png"
           />
 
-          <picture>
-            <img
-              class="header-frame"
-              src="./images/hero/frame@1x.png"
-              alt="frame"
-              width="331"
-              height="453"
-              loading="lazy"
-            />
-          </picture>
+         
         </div>
       </section>
 
@@ -189,7 +190,9 @@
 
     <footer class="footer">
       <div class="footer-container container">
-        <p class="footer-contact">Contact</p>
+        <div class="footer-local"> 
+        <div class="footer-contact-block">
+        <p class="footer-contact-block-text">Contact</p>
         <address class="footer-address">
           <ul class="footer-contact-list list">
             <li class="footer-contact-item">
@@ -199,27 +202,61 @@
               </p>
             </li>
 
-            <li class="footer-item-map">
-              <iframe
-                class="map"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3063.5416897269774!2d8.574300368631901!3d47.33001463410878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1686150873025!5m2!1suk!2sua"
-                width="300"
-                height="200"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                >A. SeeStrasse 21, Zurich, CH</iframe
-              >
+            <li class="footer-item-street">
+              <a class="footer-address-street-link link " href="#">A. SeeStrasse 21, Zurich, CH</a>
+             
             </li>
 
             <li class="footer-item-tel">
-              <a class="footer-address-link link" href="tel:0225603534434"
+              <a class="footer-address-tel-link link" href="tel:0225603534434"
                 >+0 2256 035 34434</a
               >
             </li>
           </ul>
         </address>
+      </div>
+
+        <div class="faqs-block">
+          <p class="footer-faqs-text">FAQs</p>
+          <ul class="footer-faqs-list list">
+            <li class="footer-item-faqs">How long does the process take?</li>
+            <li class="footer-item-faqs">How long does the process take?</li>
+            <li class="footer-item-faqs">How long does the process take?</li>
+            <li class="footer-item-faqs">How long does the process take?</li>
+          </ul>
+        </div>
+
+        <div class="useful-block">
+          <p class="footer-useful-text">FAQs</p>
+          <ul class="footer-faqs-list list">
+            <li class="footer-item-useful">
+              <a class="link-useful" href="#"
+                >How long does the process take?</a
+              >
+            </li>
+            <li class="footer-item-useful">
+              <a class="link-useful" href="#">Video Tours</a>
+            </li>
+            <li class="footer-item-useful">
+              <a class="link-useful" href="#">Blog</a>
+            </li>
+            <li class="footer-item-useful">
+              <a class="link-useful" href="#">Terms of services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-footer">
+          <p class="submit-text">Enquire</p>
+            <form class="submit-form" name="submit_form" autocomplete="on" novalidate method="post">
+<label class="full-name-form" for="full_name"></label>
+          <input class="full-name-input" type="name" name="name" id="full_name" placeholder="Full Name" required />
+        <label class="submit-form-field" for="submit_form_field"></label>
+        <input class="submit-input" type="email" id="submit_form_field"  name="email" placeholder="E-Mail ID" required/>
+          <button class="submit-btn" type="submit">Submit </button>
+        </div>
+      </div>
+        <p class="rules-text">All Rights For This Website Reserved.</p>
       </div>
     </footer>
 
